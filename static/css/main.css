@@ -1,0 +1,27 @@
+
+body {
+  background-color: lightblue;
+}
+
+.recipe-instruction {
+    vertical-align: middle;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+h1 {
+    display: inline;
+
+
+
+}
+
+img {
+    vertical-align:middle;
+    height: 80px;
+}
+
+.recipe-ingredients {
+text-align: center;
+}

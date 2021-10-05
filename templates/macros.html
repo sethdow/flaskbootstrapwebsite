@@ -1,0 +1,14 @@
+{% macro recipe_section(image_name,instruction,ingredients) %}
+<div class="recipe-section">
+    <div class="recipe-instruction">
+        <img src="{{ url_for('static',filename='images/' + image_name + '.png') | safe }}" alt="">
+        <h1> {{ instruction }} </h1>
+    </div>
+    <div class="recipe-ingredients">
+        {% for ingredient in ingredients %}
+        <p>{{ ingredient }}</p>
+
+        {% endfor %}
+    </div>
+</div>
+{% endmacro %}

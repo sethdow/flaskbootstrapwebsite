@@ -1,0 +1,49 @@
+breakfast:
+  smoothie:
+    image: None
+
+lunch:
+  lentilsalad:
+    sections:
+      - instruction: TOSS
+        ingredients:
+          - 25g Feta
+          - 50g Green Lentils
+          - Lettuce
+          - 'Cucumber - Medium Dice'
+          - 3 Peperoncini
+          - '1 Pepper - Medium Dice'
+        image: vegetables
+
+dinner:
+  thaisoup:
+    sections:
+      - instruction: SAUTE
+        ingredients:
+          - '50g Onion - sliced'
+          - '1 Clove Garlic - smashed'
+          - 1 tsp Thai Curry Paste
+          - '6" Lemongrass Stalk - pounded and cut into 2" pieces'
+          - '30g Ginger - sliced big enough to remove later'
+          - '1 Thai Chili - sliced'
+        image: saute
+      - instruction: ADD BROTH
+        ingredients:
+          - 200 mL Coconut Milk
+          - 2 T Soy Sauce
+          - 750 mL Vegetable Broth
+        image: broth
+      - instruction: TOSS IN
+        ingredients:
+          - '500g Pumpkin - Skinned and Sliced'
+          - 200g Tofu
+          - '200g Mushrooms - Quartered'
+          - 250g Green Beans
+        image: vegetables
+      - instruction: Garnish
+        ingredients:
+          - Lime Wedges
+          - 200g Tofu
+          - '200g Mushrooms - Quartered'
+          - 250g Green Beans
+        image: coriander
