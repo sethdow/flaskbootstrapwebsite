@@ -17,6 +17,11 @@ lunch:
 
 dinner:
   thaisoup:
+    adapted_from: https://40aprons.com/tom-kha-soup-whole30/
+    nutrition:
+      calories: 650
+      protein: 20g
+      servings: 2
     sections:
       - instruction: SAUTE
         ingredients:
@@ -47,3 +52,39 @@ dinner:
           - '200g Mushrooms - Quartered'
           - 250g Green Beans
         image: coriander
+
+  greek:
+    adapted_from: ~
+    nutrition:
+      calories: ~
+      protein: ~
+      servings: ~
+    sections:
+      - instruction: HUMMUS
+        ingredients:
+          - '50g Dry Garbanzo Bean - Cooked in the instant pot for 90 minutes'
+          - '1 Tbs Tahini'
+          - 'Juice from 1/2 Lemon'
+          - 'Salt to taste'
+          - 'Herbs - Parsley/Dill/Cilantro'
+        image: hummus
+      - instruction: BABA GANOUJ
+        ingredients:
+          - '1 Roasted Eggplant - Cut in half, salted, rubbed with olive oil, baked at 450 until brown, then scraped out, leaving the skin'
+          - 2 T Soy Sauce
+          - '1-2 Tbs Yogurt - for creaminess'
+          - 'Adapted From https://cooking.nytimes.com/recipes/1014030-baba-ghanouj'
+        image: hummus
+      - instruction: ROAST
+        ingredients:
+          - '500g Vegetables - Brussel Sprouts, Potatoes, Peppers, Squash'
+        image: oven
+      - instruction: SERVE WITH
+        ingredients:
+          - 'Salad Made from'
+          - 'Cucumber - Diced'
+          - 'Tomato - Diced'
+          - '25g Feta'
+          - 'Pickled Onion - Sliced(Soaked in Vinegar[1/2 Cup]/Water[1/2 Cup]/Sugar(2 Tbs) Mix)'
+          - 'Salt to taste'
+        image: salad
