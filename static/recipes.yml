@@ -3,7 +3,7 @@ breakfast:
     image: None
 
 lunch:
-  lentilsalad:
+  lentil salad:
     sections:
       - instruction: TOSS
         ingredients:
@@ -16,7 +16,8 @@ lunch:
         image: vegetables
 
 dinner:
-  thaisoup:
+  thai soup:
+    description: Tom Kha Soup
     adapted_from: https://40aprons.com/tom-kha-soup-whole30/
     nutrition:
       calories: 650
@@ -54,6 +55,7 @@ dinner:
         image: coriander
 
   greek:
+    description: Baba Ganouj, Hummus, and Roasted Veggies
     adapted_from: ~
     nutrition:
       calories: ~
