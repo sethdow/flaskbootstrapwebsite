@@ -17,14 +17,8 @@ def inject_stage_and_region():
 print(recipes)
 
 @app.route('/')
-def index():
-    return render_template('base.html')
-
-@app.route('/user/<name>')
-def user(name):
-    myDict = {'name':name}
-    print(myDict)
-    return render_template('user.html', myDict = myDict)
+def home():
+    return render_template('home.html')
 
 @app.route('/<meal>')
 def meal_choice(meal):

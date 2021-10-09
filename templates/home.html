@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block head %}
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/title.css') }}">
+        {% block styles %}
+            {{ super() }}
+        {% endblock %}
+{% endblock %}
+
+{% block content %}
+<section id="title">
+  <div>
+    <img src="{{ url_for('static',filename='images/' + 'nobull' + '.png') | safe }}" alt="">
+  </div>
+  <div>
+        <h1>No Bull Recipes</h1>
+
+  </div>
+  <div>
+    <h6>Where recipes don't contain any bull, or any other meat</h6>
+  </div>
+
+</section>
+
+
+
+{% endblock %}

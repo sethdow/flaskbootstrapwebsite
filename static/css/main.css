@@ -1,8 +1,23 @@
+/* General*/
+h1 {
+    display: inline;
+}
+
+img {
+    vertical-align:middle;
+    height: 80px;
+}
+
+/* Nav bar */
+.navbar-brand img{
+    height: 30px;
+}
 
 body {
   background-color: lightblue;
 }
 
+/* Recipes */
 .recipe-instruction {
     vertical-align: middle;
     margin: auto;
@@ -10,17 +25,10 @@ body {
     text-align: center;
 }
 
-h1 {
-    display: inline;
-
-
-
+.recipe-instruction img, .recipe-instruction h1 {
+margin: 3% 2%;
 }
 
-img {
-    vertical-align:middle;
-    height: 80px;
-}
 
 .recipe-ingredients {
 text-align: center;

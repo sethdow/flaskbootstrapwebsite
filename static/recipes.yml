@@ -17,7 +17,7 @@ breakfast:
       carbohydrates: 42.8
       servings: 2
     sections:
-      - instruction: DRY
+      - instruction: DRY INGREDIENTS
         image: flour
         ingredients:
           - '50g Cornmeal'
@@ -26,7 +26,7 @@ breakfast:
           - '1.5 t Sugar'
           - '.25 t salt'
           - flour
-      - instruction: WET
+      - instruction: WET INGREDIENTS
         ingredients:
           - '1 Egg'
           - '50g High Protein Yogurt'
