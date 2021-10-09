@@ -5,7 +5,7 @@
   {% for recipe in recipes[meal] %}
   <div class="col-sm-3">
     <div class="card" style="width: 18rem;">
-      <img src="{{ url_for('static',filename='images/' + 'boil' + '.png') | safe }}" class="card-img-top" alt="...">
+      <img src="{{ url_for('static',filename='images/' + recipes[meal][recipe]['main_image'] + '.png') | safe }}" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">{{ recipe }}</h5>
         <p class="card-text"> {{ recipes[meal][recipe]['description'] }}</p>

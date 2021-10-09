@@ -1,9 +1,48 @@
 breakfast:
   smoothie:
-    image: None
+    main_image: smoothie
+    description: A Simple Protein Smoothie
+    nutrition:
+      calories: 252
+      protein: 11.3
+      carbohydrates: 42.8
+      servings: 2
+  GF pancakes:
+    description: Buckwheat, Cornmeal, and Yogurt round out this thin GF pancake
+    main_image: pancakes
+    adapted_from: null
+    nutrition:
+      calories: 252
+      protein: 11.3
+      carbohydrates: 42.8
+      servings: 2
+    sections:
+      - instruction: DRY
+        image: flour
+        ingredients:
+          - '50g Cornmeal'
+          - '50g Buckwheat Flour'
+          - '1.5 t Baking Powder'
+          - '1.5 t Sugar'
+          - '.25 t salt'
+          - flour
+      - instruction: WET
+        ingredients:
+          - '1 Egg'
+          - '50g High Protein Yogurt'
+          - '75 mL Hot Water(To Soften the Cornmeal)'
+          - '50 mL Milk'
+        image: milkandeggs
+      - instruction: MIX AND FRY
+        ingredients:
+          - 'This mix tends to separate, just mix right before pouring the batter into the pan'
+        image: pancakes
+
 
 lunch:
   lentil salad:
+    description:
+    main_image: salad
     sections:
       - instruction: TOSS
         ingredients:
@@ -18,6 +57,7 @@ lunch:
 dinner:
   thai soup:
     description: Tom Kha Soup
+    main_image: boil
     adapted_from: https://40aprons.com/tom-kha-soup-whole30/
     nutrition:
       calories: 650
@@ -56,6 +96,7 @@ dinner:
 
   greek:
     description: Baba Ganouj, Hummus, and Roasted Veggies
+    main_image: boil
     adapted_from: ~
     nutrition:
       calories: ~
