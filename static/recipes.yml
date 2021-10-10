@@ -105,7 +105,7 @@ dinner:
     sections:
       - instruction: HUMMUS
         ingredients:
-          - '50g Dry Garbanzo Bean - Cooked in the instant pot for 90 minutes'
+          - '50g Dry Garbanzo Bean - Cooked in the instant pot for 90 minutes(45 if soaked)'
           - '1 Tbs Tahini'
           - 'Juice from 1/2 Lemon'
           - 'Salt to taste'
@@ -113,8 +113,7 @@ dinner:
         image: hummus
       - instruction: BABA GANOUJ
         ingredients:
-          - '1 Roasted Eggplant - Cut in half, salted, rubbed with olive oil, baked at 450 until brown, then scraped out, leaving the skin'
-          - 2 T Soy Sauce
+          - '1 Roasted Eggplant - Cut in half, salted, rubbed with olive oil, baked at 500(250 C) until brown, then scraped out, leaving the skin'
           - '1-2 Tbs Yogurt - for creaminess'
           - 'Adapted From https://cooking.nytimes.com/recipes/1014030-baba-ghanouj'
         image: hummus
