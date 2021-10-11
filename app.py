@@ -1,7 +1,7 @@
 from flask_bootstrap import Bootstrap
 import yaml
 from flask import Flask, render_template, url_for
-
+from os import environ
 
 app = Flask(__name__)
 bootstrap = Bootstrap(app)
@@ -28,7 +28,7 @@ def recipe(meal, name):
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0', port=os.environ.get("PORT", 5000))
 
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
