@@ -18,4 +18,4 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "nobullrecipes" # what you named the app when you made it in heroku
           email: "Seth.dow@gmail.com"
-          process:
+          process: web

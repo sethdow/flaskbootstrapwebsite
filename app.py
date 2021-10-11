@@ -28,7 +28,7 @@ def recipe(meal, name):
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=environ.get("PORT", 5000))
 
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
