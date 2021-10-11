@@ -41,7 +41,7 @@ breakfast:
 
 lunch:
   lentil salad:
-    description:
+    description: The Go To Salad
     main_image: salad
     sections:
       - instruction: TOSS
@@ -66,9 +66,10 @@ dinner:
     sections:
       - instruction: SAUTE
         ingredients:
+          - '1 T Coconut Oil'
           - '50g Onion - sliced'
           - '1 Clove Garlic - smashed'
-          - 1 tsp Thai Curry Paste
+          - 2 tsp Thai Curry Paste
           - '6" Lemongrass Stalk - pounded and cut into 2" pieces'
           - '30g Ginger - sliced big enough to remove later'
           - '1 Thai Chili - sliced'
@@ -76,27 +77,27 @@ dinner:
       - instruction: ADD BROTH
         ingredients:
           - 200 mL Coconut Milk
-          - 2 T Soy Sauce
+          - 1 T Soy Sauce
           - 750 mL Vegetable Broth
         image: broth
       - instruction: TOSS IN
         ingredients:
           - '500g Pumpkin - Skinned and Sliced'
           - 200g Tofu
-          - '200g Mushrooms - Quartered'
+          - '100g Mushrooms - Quartered'
           - 250g Green Beans
         image: vegetables
       - instruction: Garnish
         ingredients:
           - Lime Wedges
           - 200g Tofu
-          - '200g Mushrooms - Quartered'
+          - '100g Mushrooms - Quartered'
           - 250g Green Beans
         image: coriander
 
   greek:
     description: Baba Ganouj, Hummus, and Roasted Veggies
-    main_image: boil
+    main_image: cornucopia
     adapted_from: ~
     nutrition:
       calories: ~
