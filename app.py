@@ -2,8 +2,18 @@ from flask_bootstrap import Bootstrap
 import yaml
 from flask import Flask, render_template, url_for
 from os import environ
+from flask.ext.mongoengine import MongoEngine
 
 app = Flask(__name__)
+
+
+
+# This would usually come from your config file
+DB_URI = "mongodb+srv://<username>:<password>@<database-name>.mongodb.net/test?retryWrites=true&w=majority"
+
+app.config["MONGODB_HOST"] = DB_URI
+
+db = MongoEngine(app)
 bootstrap = Bootstrap(app)
 
 with open('static/recipes.yml', 'r') as stream:
