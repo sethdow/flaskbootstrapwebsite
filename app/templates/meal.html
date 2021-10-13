@@ -9,7 +9,7 @@
       <div class="card-body">
         <h5 class="card-title">{{ recipe }}</h5>
         <p class="card-text"> {{ recipes[meal][recipe]['description'] }}</p>
-        <a href="{{ url_for('recipe',meal=meal, name=recipe) }}" class="btn btn-primary">Make</a>
+        <a href="{{ url_for('.recipe',meal=meal, name=recipe) }}" class="btn btn-primary">Make</a>
       </div>
     </div>
   </div>

@@ -18,7 +18,7 @@
     <body>
         <!-- Common Navigation Bar-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="{{ url_for('home') }}">
+  <a class="navbar-brand" href="{{ url_for('main.home') }}">
       <img src="{{ url_for('static',filename='images/' + 'nobull' + '.png') | safe }}" alt="" style="height:30px;">
       No Bull
   </a>
@@ -34,9 +34,9 @@
           Meals
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{{ url_for('meal_choice',meal='breakfast')}}">Breakfast</a>
-          <a class="dropdown-item" href="{{ url_for('meal_choice',meal='lunch')}}">Lunch</a>
-          <a class="dropdown-item" href="{{ url_for('meal_choice',meal='dinner')}}">Dinner</a>
+          <a class="dropdown-item" href="{{ url_for('main.meal_choice',meal='breakfast')}}">Breakfast</a>
+          <a class="dropdown-item" href="{{ url_for('main.meal_choice',meal='lunch')}}">Lunch</a>
+          <a class="dropdown-item" href="{{ url_for('main.meal_choice',meal='dinner')}}">Dinner</a>
         </div>
       </li>
     </ul>
