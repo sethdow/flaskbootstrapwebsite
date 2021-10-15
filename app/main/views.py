@@ -1,7 +1,8 @@
 from flask import render_template, url_for
 import yaml
 from . import main
-from .models import Meal, Recipe, Nutrition
+from .models import Meal, Recipe, Nutrition, TripEntry
+from .forms import NameForm, RiverForm
 
 with open('app/static/recipes.yml', 'r') as stream:
     recipes = yaml.load(stream, Loader=yaml.FullLoader)
@@ -28,6 +29,29 @@ def inject_recipes():
 @main.route('/')
 def home():
     return render_template('home.html')
+
+@main.route('/nameform', methods = ['GET','POST'])
+def recipe_uploading():
+    name = None
+    form = NameForm()
+    if form.validate_on_submit():
+        name = form.name.data
+        form.name.data = ''
+    return render_template('recipe_form.html', form=form, name=name )
+
+@main.route('/riverform', methods = ['GET','POST'])
+def db_form_upload():
+    form = RiverForm()
+    if form.validate_on_submit():
+        trip_entry = TripEntry(
+            riverSection=form.riverSection.data,
+            difficulty=form.difficulty.data,
+            date=form.date.data,
+            flow=form.flow.data,
+            water_level=form.water_level.data
+        )
+        trip_entry.save()
+    return render_template('recipe_form.html', form=form)
 
 @main.route('/dbtesting')
 def recipe_save():

@@ -5,6 +5,16 @@ from .. import db
 #     ingredients: db.ListField()
 #     image: db.StringField()
 
+
+###### QUICK TEST #######
+class TripEntry(db.Document):
+    riverSection = db.StringField()
+    difficulty = db.FloatField()
+    date = db.DateField()
+    flow = db.IntField()
+    water_level = db.StringField()
+
+############## RECIPE ###############
 class Nutrition(db.EmbeddedDocument):
     servings = db.IntField()
     protein = db.IntField()
@@ -17,7 +27,6 @@ class Recipe(db.EmbeddedDocument):
     adapted_from = db.StringField()
     nutrition = db.EmbeddedDocumentField(Nutrition)
     sections = db.ListField()
-
 
 class Meal(db.Document):
     meal = db.StringField()
